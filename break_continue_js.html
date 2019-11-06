@@ -1,0 +1,35 @@
+<!-- William Stephens [Europa] -->
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Break Continue JavaScript</title>
+	</head>
+	<body>
+		<script>
+			//Determine random number and ensure it is odd.
+			var randomNumber = Math.floor((Math.random()*50)+1);
+			while(randomNumber % 2 === 0) {
+				var randomNumber = Math.floor((Math.random()*50)+1);
+			}
+
+			console.log('The random odd number to skip is: ' + randomNumber);
+
+			//Loop through printing out odd number up to 49 and skip the randomNumber.
+			for(var i=1;i<9000;i++) {
+				if(i > 49) {
+					break;
+				}
+				if(i % 2 === 0) {
+					//Skip even numbers.
+					continue;
+				}
+				if(i === randomNumber) {
+					console.log('We are going to skip the number: ' + i);
+					continue;
+				}
+				console.log('Here is an odd number: ' + i);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,53 @@
+body {
+	/* Use '../' to start from a parent directory when finding .img files */
+	background-image: url("../img/full-bloom.png");
+	font-family: 'Raleway', sans-serif;
+}
+
+h1, h2 {
+	color: #014443;
+	text-decoration: underline;
+	font-family: 'Cabin', sans-serif;
+}
+
+h1>span {
+	color: #12ca18;
+}
+
+img {
+	border-radius: 60px;
+	zoom: 60%;
+}
+
+.saturate {
+	-webkit-filter: saturate(4); filter: saturate(4);}
+}
+
+ul {
+	list-style: square;
+}
+
+th, td {
+	padding: 2px;
+}
+
+th {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+a:link {
+	color: red;
+}
+
+a:visited {
+	color: black;
+}
+
+a:hover {
+	color: #12ca18;
+}
+
+a:active {
+	color: #014443;
+}

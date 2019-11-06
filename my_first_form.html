@@ -1,0 +1,146 @@
+<!-- William Stephens [Europa] -->
+
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<title>My First HTML Form</title>
+</head>
+<body>
+
+	<!-- User Login Form -->
+	<h2>User Login</h2>
+	<form method="POST" action="https://enrhpmi02azb.x.pipedream.net">
+		<div>
+			<label for="username">Username</label>
+			<input id="username" name="username" type="text" placeholder="Enter Username">
+		</div>
+		<div>
+			<label for="password">Password</label>
+			<input id="password" name="password" type="password" placeholder="Enter Password">
+		</div>
+		<div>
+			<button type="submit">Login</button>
+		</div>
+	</form>
+
+	<!-- Email Composition -->
+	<h2>Compose an Email</h2>
+	<form method="POST" action="https://en9xts7d03beq.x.pipedream.net">
+		<div>
+			<label for="recipient">To:</label>
+			<input id="recipient" name="recipient" type="text" placeholder="Recipient">
+		</div>
+		<div>
+			<label for="sender">From:</label>
+			<input id="sender" name="sender" type="text" placeholder="Sender">
+		</div>
+		<div>
+			<label for="subject">Subject:</label>
+			<textarea id="subject" name="subject" cols="50" rows="1"></textarea>
+		</div>
+		<div>
+			<label for="body">Body:</label>
+			<textarea id="body" name="body" cols="50" rows="10"></textarea>
+		</div>
+			<label for="save_copy">Would you like to save a copy of this email to your sent folder?</label>
+			<input type="checkbox" id="save_copy" name="save_copy" value="yes" checked>
+		<div>
+			<button type="submit">Send Email</button>
+		</div>
+	</form>
+
+	<!-- Multiple Choice Test (Two Radio then One Checkbox) -->
+	<h2>Multiple Choice Test</h2>
+	<form method="POST" action="https://enpuhe9dx4r4k.x.pipedream.net">
+		<div>
+			<p>What is the capital of Texas?</p>
+			<label><input type="radio" id="mcq1a1" name="mcq1[]" value="san_antonio"> San Antonio</label>
+			<label><input type="radio" id="mcq1a2" name="mcq1[]" value="antarctica"> Antarctica</label>
+			<label><input type="radio" id="mcq1a3" name="mcq1[]" value="austin"> Austin</label>
+		</div>
+		<div>
+			<p>Who is the Prime Minister of Canada?</p>
+			<label><input type="radio" id="mcq2a1" name="mcq2[]" value="justin_trudeau"> Justin Trudeau</label>
+			<label><input type="radio" id="mcq2a2" name="mcq2[]" value="xi_jinping"> Xi Jinping</label>
+			<label><input type="radio" id="mcq2a3" name="mcq2[]" value="danny_devito"> Danny DeVito</label>
+		</div>
+		<div>
+			<p>How many cats is too many cats?</p>
+			<label><input type="checkbox" id="cbq1a1" name="cbq1[]" value="1"> 1</label>
+			<label><input type="checkbox" id="cbq1a2" name="cbq1[]" value="2"> 2</label>
+			<label><input type="checkbox" id="cbq1a3" name="cbq1[]" value="9001"> 9001</label>
+		</div>
+		<div>
+			<label for="game_systems">What game systems do you own?</label>
+			<select id="game_systems" name="game_systems[]" multiple>
+				<option>N64</option>
+				<option>SNES</option>
+				<option>PlayStation</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+
+	<!-- Select Testing -->
+	<h2>Select Testing</h2>
+	<form method="POST" action="https://enpuhe9dx4r4k.x.pipedream.net">
+		<div>
+			<label for="age_select">Are you over 30 years old?</label>
+			<select id="age_select" name="age_select">
+				<option value="1" selected>Yes</option>
+				<option value="0">No</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div> 
+	</form>
+
+	<!-- Checkbox Practice -->
+	<h2>Checkbox Practice</h2>
+	<form method="POST" action="https://en9xts7d03beq.x.pipedream.net">
+		<div>
+			<label for="mailing_list">Sign me up for the mailing list!</label>
+			<input type="checkbox" id="mailing_list" name="mailing_list" value="yes" checked>
+		</div>
+		<div>
+			<p>What operating systems have you used?</p>
+			<label><input type="checkbox" id="os1" name="os[]" value="linux"> Linux</label>
+			<label><input type="checkbox" id="os2" name="os[]" value="osx"> OS X</label>
+			<label><input type="checkbox" id="os3" name="os[]" value="windows"> Windows</label>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+
+	<!-- Select List Practice -->
+	<h2>Select List Practice</h2>
+	<form method="POST" action="https://enpuhe9dx4r4k.x.pipedream.net">
+		<div>
+			<label for="transmission">Select your transmition type: </label>
+			<select id="transmission" name="transmission">
+				<option value="automatic">Automatic</option>
+				<option value="manual" selected>Manual</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+	<form method="POST" action="https://enpuhe9dx4r4k.x.pipedream.net">
+		<div>
+			<label for="os">What operating systems have you used? </label>
+			<select id="os" name="os[]" multiple>
+				<option value="linux">Lunux</option>
+				<option value="osx">OS X</option>
+				<option value="windows">Windows</option>
+			</select>
+		</div>
+		<div>
+			<button type="submit">Submit</button>
+		</div>
+	</form>
+</body>
